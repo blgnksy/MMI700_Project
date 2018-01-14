@@ -1,0 +1,188 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[american]{babel}
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage[margin=2cm,left=2cm,includefoot]{geometry}
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage[hidelinks]{hyperref} %clickable references
+\usepackage{float}%float position
+\usepackage[document]{ragged2e} %justify
+\usepackage{amsmath} %multiline equations
+\usepackage{listings}
+\usepackage{color}
+\usepackage{cleveref}
+\newcommand{\crefrangeconjunction}{ to~}
+% These packages are all incorporated in the memoir class to one degree or another...
+% for code samples package listings
+\lstset{language=C,
+  frame=single,
+  breaklines=true,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  commentstyle=\color{green}\ttfamily,
+  morecomment=[l][\color{magenta}]{\#},
+  morekeywords={Npp8u,__host__,__device__,thrust,reduce,for_each,transform,minimum,maximum,placeholders}
+}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+% Title Page
+\begin{titlepage}
+	\begin{center}
+		\line(10,0){400}\\
+		[4mm] %for add spacing
+		\huge{\bfseries The Craft of Research} \\
+		[1mm]
+		\line(10,0){400}\\
+		[1 cm]
+		\textsc{\LARGE Bilgin Aksoy}\\
+		[1 cm]
+		\textsc{\large MMI700-Research Methods}\\
+		[15 cm]
+	\end{center}
+	
+	\begin{flushright}
+		\textsc{\large Bilgin Aksoy\\
+		MMI\\
+		2252286\\
+		15 January 2018\\
+		}
+	\end{flushright}
+\end{titlepage} 
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{The Aim of The Book}
+	\justifying The aim of the book is providing the necessary concepts/workflows about a research project starting from the selection of the selecting the research topic, converting the topic to a research problem, searching for the problem and finally to writing process of the report/thesis itself. \\
+	
+	\subsubsection{Who Should Read This Book?}
+	All researchers, not only the students but also those in business and government who do research and report, should read this book. The researchers should read the book twice; first for learning the overall process before starting a project, and second for consulting whenever the researcher needs to recall/identify the concepts while researching. Both the book and each chapter in itself are organized from  very simple concepts to hardest ones. \textbf{(somehow likely to Inductive logic)}.\\
+	
+	\subsubsection{Authors}
+	The authors of the book are mainly from the English Teaching and Literature. So anyone can easily read and understand the book.   \\
+
+	The authors of the book are :
+		\begin{itemize}
+			\item Wayne C.Booth,
+			\item Gregory G. Colomb,
+			\item Joseph M. Williams,
+			\item Joseph Bizup,
+			\item William T.Flitzgerald.
+		\end{itemize}
+	
+\section{Inside The Book}
+	A research can be thought as a dialog. In each dialog, there are two actors, which are the writer and the reader. Both has its own role. The writer's role is explaining what's has been found recently, interesting information, solution to an important practical problem or answer of a conceptual problem. The book reminds during research phase and writing phase a writer should always consider and address the needs, acknowledgements, and responses of the reader. A reader's needs are entertaining, learning something new or learning a solution to a practical problem.\\
+
+A research project begins with selecting a topic. The book has a great part about the selection of the topic. The topic should answer the needs of the readers. \textbf{(Presupposition)} So that selecting topic could impact the overall success of the research. The book gives the relevant information and sources to select a topic. The strength of the book is clarifying almost everything with good examples. Even if one didn't understand a concept, the researcher could deduct the key points from the examples. \textbf{(Deductive logic)} The most important part of the topic selection is limiting the scope of the topic. It's quite surprising adding a word or phrases, especially a special kind like conflict, description, contribution, and developing. Consider a topic is \textit{“the history of the commercial aviation”}. Narrowed topic can be \textit{“the contribution of the military in developing the DC-3 in the early years of commercial aviation.”} Adding words or phrases gives the lacking action word to the topic. \\
+
+The following process is the questioning of the topic using the standard journalist template \textit{“who, what, when, where, and how, and why”}. But a slightly small difference, focusing the how and why. The answers of these questions will lead the research to a good point. :But the readers' most significant question will be \textit{“So What”}. An experienced researcher should address the answer of this question without any question mark in readers' mind. The answer should explain the cost or loss before the research solve it.\\
+
+The authors of the book give a good formula:
+	\begin{itemize}
+		\item Topic: I am studying/working on/trying to learn about …....
+		\item Question: because I want to find out what/why/how …....
+		\item Significance: in order to help my reader understand how/why/whether….....
+	\end{itemize}
+	
+	The readers will be mostly interested in the significance of outcomes. \textbf{(Presupposition)} A good researcher must address a problem that the readers also want to solve. This would also impact on overall success of the research.\\
+
+A research could solve two kinds of problems that practical problem and conceptual problem. A practical problem is a problem that cost time, money etc. Solving that problem can mitigate the cost or loss. Unlikely solving a conceptual problem can make the community to better understand something. The authors give a very good advise that looking for a small problem that is part of a bigger one. In fact when I think my problem selections during the M.S. process, I have been faced the problem of selecting too broad problem which made me have difficulty in solving it within the given time.\\
+ 
+The Chapter which is about sources, and I think it is one of the best chapters of the book. The book proposes three types of sources that are primary sources, secondary sources, and tertiary sources. Additionally, it explains how these sources can be used in research and how to help the research process. The book gives a trick that using the Library of Congress Call Number and especially Subject Headings could make finding relevant sources process easier. Maybe, finding reliable sources is more important than finding relevant sources. The book also covers process of how to categorize a source as reliable.\\
+
+While reading the chapter six \textit{“Engaging Sources”}, I recognize another fault of mine. I realized that I should start using a reference management system and note-taking application from the beginning of the M.S. process. This chapter starts describing which bibliographical information should be collected and how to note and use that note in writing process. \\
+
+The Chapter Seven starts describing the argument in a comprehensive way as \textit{“In a research argument, you make claim, back it with reasons supported by evidence, acknowledge and response to other views, and sometimes explain your principles of reasoning.”} Using these five pillar which constituent an argument can be called basic argument. In a research project, a writer needs a more complex argument that has two or more reasons that each of them has it's own supporting reasons, evidence even warrant.\\
+
+Writing a claim should be different for a practical problem or a conceptual problem. As mentioned before, a conceptual problem generally is about understanding something better. A conceptual claim mainly focuses on the fact, existence, definition, classification, cause, consequences. Unlikely a practical claim should consider feasibility, speed, cost. Like most of the book's chapter, the authors give a good formula to constitute a good claim. A good claim should have similar structure as the following:\\
+ \center \textit{“Although I acknowledge X, I claim Y, because of the reason Z.”}
+ 
+ \justifying The book advices using a story-board for outlining the claims, reasons, and evidences. It also advices supporting each reason with an evidence. But the evidences should be clear and precise. For example, using \textit{“a great deal of ..”} or \textit{“a high probability of ...”} are not acceptable. The authors warn the researcher about not using words like some, most, many, almost, often, usually, frequently, and generally. \\
+
+Supporting claims with reasons, and evidence is the beginning of the constitute a good claim. But throughout the project the writer should also consider the acknowledgements, responses, alternatives carefully. If the reader feels that the writer doesn't answer or care about those too, he/she will not probably read the report. As I mentioned earlier, the authors repeatedly offer the researcher to take their readers in middle of their research.  The book focuses also the style of how to answer the readers' acknowledgements, and responses. It advices starting the responses with one of the words like \textit{“despite, regardless of, notwithstanding, although, even though, and while”}.\\
+
+The Chapter Eleven covers the last pillar of an argument, warrants. \textit{“Warrant are general principles that connect reasons to claim.”} The readers use warrant not only validity of the reasons but also the connection with the reason and claim. Whenever it is possible using hard evidence, like statistical data etc., it would help not to question the warrants, reasons, and as a result claims should be thicker. \\
+
+Starting from the Chapter Twelve, the book covers the writing the project. Mainly focuses how to express the earlier concepts like argument, claim, reasons, acknowledgements, responses, and warrants throughout the report. Like reason-evidence chapter, the book advices using a storyboard for writing a brief introduction, summarizing sources that the project depend on/challenge/modify/expand on, writing the answer of so what, and adding the main point. But the authors strongly advice not to write the introduction as a first job. \\
+
+The authors give a good formula for writing the abstract. In fact, they offer two formula:\\
+
+	\begin{itemize}
+		\item Context + Problem + Main Point or
+		\item Context + Problem + Launching point.
+	\end{itemize}
+
+A final note for an abstract, using keywords in first couple sentences of the abstract and also in the title would increase potential readers. \\
+
+The Chapter Fourteen explains the every detail about citing, paraphrasing, and quoting. The main idea can be expressed using six words: cite everything that is not yours. And another tip for citing process: \\
+	\center Citing sources would increase reliability, currency, and completeness of your work. 
+
+\vspace{0.9 cm}
+\justifying Writing the conclusion part is also very important. The authors also formulate this process as:\\
+
+	\begin{itemize}
+		\item Starting with the main point,
+		\item Add a new significance or application,
+		\item Call for more research.
+	\end{itemize}
+	
+\section{My Conclusion}
+	The Craft of Research is an essential book for who do research and write report/thesis etc.  The book comprehensively covers all aspects beginning from the topic, research process to writing the report. Every subject is explained by giving not only good examples but also bad examples. I learned a lot and also enjoyed it. I wish to read this book before or at the beginning of the M.S. 
+	
+
+\end{document}
